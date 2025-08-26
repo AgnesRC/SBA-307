@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOMEPAGE</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/homepage.html">Home</a> | 
+      <a href="/form.html">Apply</a> |
+      <a href="">Donate</a> |
+      <a href="">Contact Us</a>
+    </nav>
+
+    <div class="header">
+      <!-- Header/Logo Image -->
+      <img src="/images/myLogo.jpg" alt="Logo" id="logo" />
+      <h1>Daniel Kennedy Wlue Scholarship Fund</h1>
+    </div>
+
+    <div class="about">
+      <!-- About Section -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam aperiam
+        explicabo magni molestias aliquam deleniti voluptate nihil et nesciunt
+        iure itaque, recusandae exercitationem aliquid doloribus. Voluptatem, a
+        eum? Non.
+      </p>
+    </div>
+
+    <!-- Our Scholarships -->
+    <h1>Our Scholarships</h1>
+    <div class="ourtypes">
+        <div class="typecard">
+            <div class="img-container">
+              <img src="images/tradeschool.jpg" alt="tradeSchool" />
+            </div>
+            <h2>Trade School</h2>
+            <hr />
+            <p>Lorem ipsum ..</p>
+          </div>    
+        <div class="typecard">
+        <div class="img-container">
+          <img src="/images/undergrad.webp" alt="Undergraduate" />
+        </div>
+        <h2>Undergraduate</h2>
+        <hr />
+        <p>Lorem ipsum ..</p>
+      </div>
+      <div class="typecard">
+        <div class="img-container">
+          <img src="/images/graduate.jpeg" alt="graduate" />
+        </div>
+        <h2>Graduate</h2>
+        <hr />
+        <p>Lorem ipsum ..</p>
+      </div>
+    </div>
+    <button>Apply Here</button>
+
+    <!-- Footer with contact form -->
+    <footer class="footer">
+        <h2>Contact Us</h2>
+        <form action="contactinfo">
+            <label for="namebox"> First & Last Name: </label>
+            <input type="text">
+            <label for="email"> Email Address: </label>
+            <input type="text">
+            <label for="textmessage">Inquiry/Question: </label>
+            <input type="text">
+        </form>
+        
+
+    </footer>
+  </body>
 </html>
