@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APPLICATION</title>
 
     <style>
-
-
+      
     </style>
-</head>
+  </head>
 
-<body>
-    
+  <body>
+    <h1>Application Form</h1>
+    <form class="contactinfo">
+      <label for="firstname">
+        First Name:
+        <input type="text" />
+      </label>
+
+      <label for="lastname">
+        Last Name:
+        <input type="text" />
+      </label>
+      <label for="email">
+        Email Address:
+        <input type="text" />
+      </label>
+
+      <label for="location">
+        Location:
+        <input type="text" />
+      </label>
+
+      <label for="dob">
+        Date of Birth:
+        <input type="date" />
+      </label>
+
+      <!-- Level of Education Dropdown List -->
+      <label for="educationlevel"> Level of Education:
+        <select>
+            <option value="None"> No Formal Education</option>
+            <option value="highschool"> Primary/Secondary School</option>
+            <option value="associate"> Associate Degree</option>
+            <option value="bachelors"> Bachelor's Degree </option>
+            <option value="masters"> Master's Degree </option>
+            <option value="doctoral"> Doctoral/Professional Degree </option>
+            <option value="vocational"> Trade/Vocational School </option>
+            <option value="other"> Other </option>
+        </select>
+      </label>
 
 
+      <!-- Scholarship Type Radio Buttons -->
+      <fieldset>
+        <legend>Scholarship Type</legend>
+        <label for="trade"
+          >Trade School
+          <input type="radio" />
+        </label>
 
-    
-</body>
+        <label for="undergrad"
+          >Undergraduate Degree
+          <input type="radio" />
+        </label>
+
+        <label for="grad"
+          >Graduate Degree
+          <input type="radio" />
+        </label>
+      </fieldset>
+
+      <label for="essay1"
+        >What are your educational & career goals? :
+        <input type="text" />
+      </label>
+
+      <label for="essay2"
+        >Why do you deserve this scholarship? :
+        <input type="text" />
+      </label>
+
+      <input type="button" value="Submit Application" />
+    </form>
+  </body>
 </html>
