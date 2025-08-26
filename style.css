@@ -6,6 +6,8 @@ body {
     border: 1px solid black;
     font-size: x-large;
     padding: 20px;
+    /* width: 100%;
+    position: fixed; */
 }
 
 .header {
@@ -19,6 +21,7 @@ body {
 }
 
 .ourtypes {
+    border: 1px solid black;
     display: flex;
     justify-content: space-around;
 }
@@ -35,3 +38,17 @@ img {
     width: 300px;
  }
  
+.button {
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px;
+}
+
+ footer {
+    border: 1px solid black;
+    padding: 20px;
+ }
+
+ label {
+    display: block;
+ }
