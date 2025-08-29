@@ -1,18 +1,32 @@
 body {
-
+    background-color: #FAF3DD;
 }
 
 .navbar {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: x-large;
     padding: 20px;
+    background-color: #4A7C59;
+    color: #FAF3DD;
+    display: flex;
+    justify-content: space-evenly;
     /* width: 100%;
     position: fixed; */
 }
 
+a {
+    text-decoration: none;
+    color: rgb(254, 250, 224);
+}
+
 .header {
     text-align: center;
+    margin-top: 30px;
 }
+.about {
+    text-align: center;
+}
+
 
 #logo {
     width: 500px;
@@ -21,7 +35,7 @@ body {
 }
 
 .ourtypes {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
 }
@@ -33,22 +47,65 @@ img {
 }
 
 .typecard {
-    border: 1px solid black;
+    box-shadow: -5px 10px 10px 5px #4A7C59;
+    border-radius: 25px;
     padding: 10px;
     width: 300px;
+    transition-property: padding, background-color;
+    transition-duration:1.5s;
+ }
+
+ .typecard:hover {
+    background-color: #4A7C59;
+    color: #FAF3DD;
+    padding: 20px;
  }
  
 .button {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     padding: 30px;
 }
 
+button {
+    padding: 15px;
+    font-size: larger;
+    background-color: #4A7C59;
+    color: #FAF3DD;
+    transition-property: width, height, background-color;
+    transition-duration:1.5s;
+    border: none;
+}
+
+button:hover {
+    width: 125px;
+    height: 50px;
+    background-color: #C8D5B9;
+    cursor: pointer;
+}
+
  footer {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
     padding: 20px;
+    background-color: #4A7C59;
+    color: #FAF3DD;
  }
 
  label {
     display: block;
+    margin-left: 30px;
+}
+
+ input {
+    background-color: #FAF3DD;
+    border: none;
+    margin-left: 30px;
+
  }
+
+ #essaybox {
+    width: 500px;
+    height: 100px;
+  }

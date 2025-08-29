@@ -7,27 +7,75 @@
     <title>APPLICATION</title>
 
     <style>
-      .navbar {
-    border: 1px solid black;
-    font-size: x-large;
-    padding: 20px;
-    }
+      body {
+        background-color: #faf3dd;
+      }
 
+      .contactinfo {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 800px;
+        padding-left: 10px;
+        margin-top: 30px;
+        font-size: larger;
+      }
+
+      .navbar {
+        /* border: 1px solid black; */
+        font-size: x-large;
+        padding: 20px;
+        background-color: #4a7c59;
+        color: #faf3dd;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(254, 250, 224);
+      }
+
+      #button {
+        padding: 10px;
+        background-color: #4a7c59;
+        color: #faf3dd;
+        border: none;
+        font-size: larger;
+      }
+
+      #button:hover {
+        background-color: #c8d5b9;
+        cursor: pointer;
+      }
+
+      fieldset {
+        width: fit-content;
+      }
+
+      input {
+        background-color: white;
+        border: none;
+      }
+
+      #essaybox {
+        width: 500px;
+        height: 100px;
+      }
     </style>
   </head>
 
   <body>
     <div>
-        <nav class="navbar">
-            <a href="/homepage.html">Home</a> | 
-            <a href="/form.html">Apply</a> |
-            <a href="">Donate</a> |
-            <a href="">Contact Us</a>
-          </nav>
+      <nav class="navbar">
+        <a href="/homepage.html">Home</a> | <a href="/form.html">Apply</a> |
+        <a href="">Donate</a> |
+        <a href="">Contact Us</a>
+      </nav>
     </div>
-    
 
-    <h1>Application Form</h1>
+    <h1>Application Form</h1> <hr>
     <form class="contactinfo">
       <label for="firstname">
         First Name:
@@ -54,19 +102,19 @@
       </label>
 
       <!-- Level of Education Dropdown List -->
-      <label for="educationlevel"> Level of Education:
+      <label for="educationlevel">
+        Level of Education:
         <select>
-            <option value="None"> No Formal Education</option>
-            <option value="highschool"> Primary/Secondary School</option>
-            <option value="associate"> Associate Degree</option>
-            <option value="bachelors"> Bachelor's Degree </option>
-            <option value="masters"> Master's Degree </option>
-            <option value="doctoral"> Doctoral/Professional Degree </option>
-            <option value="vocational"> Trade/Vocational School </option>
-            <option value="other"> Other </option>
+          <option value="None">No Formal Education</option>
+          <option value="highschool">Primary/Secondary School</option>
+          <option value="associate">Associate Degree</option>
+          <option value="bachelors">Bachelor's Degree</option>
+          <option value="masters">Master's Degree</option>
+          <option value="doctoral">Doctoral/Professional Degree</option>
+          <option value="vocational">Trade/Vocational School</option>
+          <option value="other">Other</option>
         </select>
       </label>
-
 
       <!-- Scholarship Type Radio Buttons -->
       <fieldset>
@@ -89,15 +137,17 @@
 
       <label for="essay1"
         >What are your educational & career goals? :
-        <input type="text" />
+        <input type="text" id="essaybox" />
       </label>
 
       <label for="essay2"
         >Why do you deserve this scholarship? :
-        <input type="text" />
+        <input type="text" id="essaybox" />
       </label>
 
-      <input type="button" value="Submit Application"/>
+      <a href="/finalpage.html">
+        <input type="button" value="Submit Application" id="button" />
+      </a>
     </form>
   </body>
 </html>
